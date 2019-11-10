@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+import imac from './imac.png';
+import keyboard from './keyboard.png';
+import mouse from './mouse.png';
+import glasses from './glasses.png';
+import light_switch from './light-switch.png';
+import desktop_image from './desktop-image.jpg';
 import './App.css';
 
 function App() {
+  const isBackgroundDark = false;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className={isBackgroundDark ? 'App-dark-header' : 'App-ligth-header'}>
+        <div className="Desk">
+          <img src={imac} className="App-logo" alt="imac" />
+          <img src={keyboard} className="Keyboard-logo" alt="keyboard" />
+          <img src={mouse} className="Mouse-logo" alt="mouse" />
+          <img src={glasses} className="Glasses-logo" alt="glasses" />
+        </div>
+        <img src={desktop_image} className="Desktop-image-logo" alt="desktop_image" />
+        <img src={light_switch} className="Light-switch-logo" alt="light_switch" />
+      </div>
     </div>
   );
 }

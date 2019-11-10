@@ -4,9 +4,54 @@
 
 .App-logo {
   height: 40vmin;
+  position: relative;
+  bottom: 270px;
+  left: 35%;
+  z-index: 1;
 }
 
-.App-header {
+.Keyboard-logo {
+  height: 15vmin;
+  position: absolute;
+  bottom: 0px;
+  left: 30%;
+  z-index: 1;
+}
+
+.Mouse-logo {
+  height: 10vmin;
+  position: absolute;
+  bottom: 40px;
+  left: 60%;
+  z-index: 1;
+}
+
+.Glasses-logo {
+  height: 10vmin;
+  position: absolute;
+  bottom: 100px;
+  left: 15%;
+  z-index: 1;
+}
+
+.Light-switch-logo {
+  height: 5vmin;
+  position: absolute;
+  bottom: 300px;
+  left: 70%;
+  z-index: 1;
+}
+
+.Desktop-image-logo {
+  height: 27vmin;
+  width: 46vmin;
+  position: absolute;
+  bottom: 304px;
+  left: 36%;
+  z-index: 1;
+}
+
+.App-ligth-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -15,6 +60,26 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-dark-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Desk {
+  background-color: #b35b5b;
+  position: absolute;
+  bottom: 0px;
+  height: 33%;
+  width: 100%;
+  display: flex;
 }
 
 .App-link {
